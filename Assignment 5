@@ -1,7 +1,5 @@
 import re
 
-# Program to validate PAN number using regular expression
-
 def validate_pan(pan):
     pattern = r'^[A-Z]{5}[0-9]{4}[A-Z]$'
     if re.match(pattern, pan):
@@ -9,11 +7,8 @@ def validate_pan(pan):
     else:
         return False
 
-
-# Take input from the user
 pan_number = input("Enter PAN number: ")
 
-# Validate and display result
 if validate_pan(pan_number):
     print("Valid PAN Number")
 else:
